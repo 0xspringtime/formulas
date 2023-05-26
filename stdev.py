@@ -17,6 +17,7 @@ std_dev = variance ** 0.5
 print("Standard Deviation:", std_dev)
 
 import statistics
+#uses Bessel's correction
 
 # Sample data
 data = [1, 2, 3, 4, 5]
@@ -25,7 +26,7 @@ data = [1, 2, 3, 4, 5]
 std_dev = statistics.stdev(data)
 
 # Print the standard deviation
-print("Standard Deviation (with library):", std_dev)
+print("Standard Deviation:", std_dev)
 
 import numpy as np
 
@@ -36,5 +37,5 @@ data = [1, 2, 3, 4, 5]
 std_dev = np.std(data)
 
 # Print the standard deviation
-print("Standard Deviation (with library):", std_dev)
+print("Standard Deviation:", std_dev)
 
