@@ -130,3 +130,7 @@ $$\sigma(x) = \frac{1}{1 + e^{-x}}$$
 -Flatten: The output feature maps from the last convolutional/pooling layer are flattened into a 1D vector.
 -Fully Connected Layers: These layers operate similar to those in a traditional neural network, where each neuron is connected to all neurons in the previous layer.
 -Activation Functions: Activation functions like ReLU are applied to the outputs of the fully connected layers.
+
+[Batch Normalization:](./batchn)
+
+$$\text{BN}(x) = \gamma \cdot \frac{x - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}} + \beta$$ with $\mu_B$ mean of the input batch, $\sigma_B^2$ variance of the input batch, $\gamma$ and $\beta$ learnable parameters
