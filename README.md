@@ -26,6 +26,10 @@ $$f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 $$Z = \frac{x - \mu}{\sigma}$$
 
+[T-Test:](./ttest.py)
+
+$$t = \frac{{\bar{x}_1 - \bar{x}_2}}{{\sqrt{{\frac{{s_1^2}}{{n_1}} + \frac{{s_2^2}}{{n_2}}}}}}$$
+
 [Central Limit Theorem:](./clt.py)
 
 Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with mean $\mu$ and standard deviation $\sigma$. If $n$ is sufficiently large, the distribution of the sample mean $\bar{X}$ approaches a Gaussian distribution with mean $\mu$ and standard deviation $\sigma/\sqrt{n}$ as $n$ tends to infinity.
