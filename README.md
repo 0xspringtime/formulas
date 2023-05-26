@@ -89,3 +89,8 @@ $$WCSS = \sum_{i=1}^{n} \sum_{j=1}^{k} w_{ij} \cdot ||x_i - \mu_j||^2$$
 4. Sort the eigenvalues in descending order and select the top k eigenvectors corresponding to the largest eigenvalues.
 5. Project the data onto the selected eigenvectors: $$\text{transformed\_data} = X_{\text{std}} \times \text{selected\_eigenvectors}$$
 
+[Gradient Descent:](./grad.py)
+
+1. Initialize the parameters $\theta = [\theta_0, \theta_1, \ldots, \theta_n]$
+2. Calculate the gradient of the cost function: $$\nabla J(\theta) = \left[ \frac{\partial J}{\partial \theta_0}, \frac{\partial J}{\partial \theta_1}, \ldots, \frac{\partial J}{\partial \theta_n} \right]$$
+3. Update the parameters using the learning ratei $\alpha$: $\theta := \theta - \alpha \cdot \nabla J(\theta)$
