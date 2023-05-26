@@ -69,3 +69,10 @@ $$MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
 [R-squared (Coefficient of Determination):](./rsquare.py)
 
 $$R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}$$
+
+[K-Means Clustering:](./kmc.py)
+
+1. Initialize the cluster centroids $\mu_1, \mu_2, \ldots, \mu_K$
+2. Assign each data point $x_i$ to the nearest centroid $\mu_j$ based on the Euclidean distance $\text{argmin}_j ||x_i - \mu_j||^2$
+3. Update the centroids by computing the mean of the data points assigned to each centroid $\mu_j = \frac{1}{N_j} \sum_{i=1}^{N_j} x_i$ 
+4. Repeat steps 2 and 3 until convergence or a maximum number of iterations is reached.
