@@ -76,3 +76,16 @@ $$R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y
 2. Assign each data point $x_i$ to the nearest centroid $\mu_j$ based on the Euclidean distance $\text{argmin}_j ||x_i - \mu_j||^2$
 3. Update the centroids by computing the mean of the data points assigned to each centroid $\mu_j = \frac{1}{N_j} \sum_{i=1}^{N_j} x_i$ 
 4. Repeat steps 2 and 3 until convergence or a maximum number of iterations is reached.
+
+[Within-Cluster Sum of Squares:](./wcss.py)
+
+$$WCSS = \sum_{i=1}^{n} \sum_{j=1}^{k} w_{ij} \cdot ||x_i - \mu_j||^2$$
+
+[Principal Component Analysis:](./pca.py)
+
+1. Standardize the data (optional but recommended): $$X_{\text{std}} = \frac{X - \text{mean}(X)}{\text{std}(X)}$$ where X is the original data, mean(X) is the mean along each feature, and std(X) is the standard deviation along each feature.
+2. Compute the covariance matrix: $$\text{covariance} = \frac{1}{n} X_{\text{std}}^T X_{\text{std}}$$ where n is the number of data points.
+3. Compute the eigenvectors and eigenvalues of the covariance matrix: $$\text{eigenvectors}, \text{eigenvalues} = \text{eig}(\text{covariance})$$
+4. Sort the eigenvalues in descending order and select the top k eigenvectors corresponding to the largest eigenvalues.
+5. Project the data onto the selected eigenvectors: $$\text{transformed\_data} = X_{\text{std}} \times \text{selected\_eigenvectors}$$
+
