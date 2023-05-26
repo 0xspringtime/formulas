@@ -118,6 +118,10 @@ $$L = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y_{i,c} \log(\hat{y}_{i,c})$$
 
 $$\sigma(x) = \frac{1}{1 + e^{-x}}$$
 
+[Softmax:](./softmax.py)
+
+$$p_i = \frac{e^{x_i}}{\sum_{j=1}^{n} e^{x_j}}$$
+
 [Cosine Similarity:](./cosine.py)
 
 $$\text{similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
