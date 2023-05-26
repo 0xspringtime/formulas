@@ -103,3 +103,11 @@ $$f(x) = \max(0, x)$$
 
 $$Z^{[l]} = W^{[l]} A^{[l-1]} + b^{[l]}$$
 $$A^{[l]} = g^{[l]}(Z^{[l]})$$
+
+[Bavkward Propogation:](./bprop.py)
+
+1. Compute the error gradient at the output layer: $$dZ^{[L]} = A^{[L]} - Y$$
+2. Propagate the error gradients backward through the layers: $$dZ^{[l]} = (W^{[l+1]})^T \cdot dZ^{[l+1]} \cdot g'^{[l]}(Z^{[l]})$$ $$dW^{[l]} = \frac{1}{m} \cdot dZ^{[l]} \cdot (A^{[l-1]})^T$$ $$db^{[l]} = \frac{1}{m} \cdot \text{np.sum}(dZ^{[l]}, \text{axis}=1, \text{keepdims}=True)$$
+3. Update the parameters using the error gradients and a learning rate: $$W^{[l]} = W^{[l]} - \alpha \cdot dW^{[l]}$$ $$b^{[l]} = b^{[l]} - \alpha \cdot db^{[l]}$$
+
+
