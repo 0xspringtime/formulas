@@ -134,3 +134,7 @@ $$\sigma(x) = \frac{1}{1 + e^{-x}}$$
 [Batch Normalization:](./batchn)
 
 $$\text{BN}(x) = \gamma \cdot \frac{x - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}} + \beta$$ with $\mu_B$ mean of the input batch, $\sigma_B^2$ variance of the input batch, $\gamma$ and $\beta$ learnable parameters
+
+[Drouput:](./dropout.py)
+
+$$\text{Dropout}(x) = \frac{1}{1-p} \cdot \text{Mask} \odot x$$
