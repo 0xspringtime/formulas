@@ -22,6 +22,10 @@ $$P(X=k) = \frac{e^{-\lambda} \cdot \lambda^k}{k!}$$
 
 $$f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
+[Z-Score:](./zscore)
+
+$$Z = \frac{x - \mu}{\sigma}$$
+
 [Central Limit Theorem:](./clt.py)
 
 Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with mean $\mu$ and standard deviation $\sigma$. If $n$ is sufficiently large, the distribution of the sample mean $\bar{X}$ approaches a Gaussian distribution with mean $\mu$ and standard deviation $\sigma/\sqrt{n}$ as $n$ tends to infinity.
