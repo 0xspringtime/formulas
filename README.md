@@ -30,4 +30,18 @@ Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distrib
 
 $$\bar{x} \pm Z \left(\frac{\sigma}{\sqrt{n}}\right)$$
 
+[Linear Regression:](./linreg.py)
 
+$$y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n$$
+
+[Logistic Regression:](./logreg.py)
+
+$$P(y=1 \mid x) = \frac{1}{1 + e^{-(\beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_n x_n)}}$$
+
+[Naive Bayes:](./nbayes)
+
+$$P(y | x_1, x_2, \ldots, x_n) = \frac{P(y) \cdot P(x_1 | y) \cdot P(x_2 | y) \cdot \ldots \cdot P(x_n | y)}{P(x_1) \cdot P(x_2) \cdot \ldots \cdot P(x_n)}$$
+
+[Decision Trees:](./dtree.py)
+
+Recursively partitioning the data based on feature values and creating a tree-like model of decisions and their outcomes
