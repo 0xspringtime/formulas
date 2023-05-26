@@ -118,6 +118,10 @@ $$L = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y_{i,c} \log(\hat{y}_{i,c})$$
 
 $$\sigma(x) = \frac{1}{1 + e^{-x}}$$
 
+[Cosine Similarity:](./cosine.py)
+
+$$\text{similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
+
 [Convolutional Neural Networks:](./cnn.py)
 
 1. Convolutional Layer:
@@ -138,3 +142,10 @@ $$\text{BN}(x) = \gamma \cdot \frac{x - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}} + \
 [Drouput:](./dropout.py)
 
 $$\text{Dropout}(x) = \frac{1}{1-p} \cdot \text{Mask} \odot x$$
+
+[Attention Mechanism:](./attention.py)
+
+for query vector $Q$, vey vectors $K_i$, and value vectors $V_i$ for $i = 1, 2, ..., N$:
+1. Compute the attention scores $S_i$ between the query $Q$ and each key $K_i$. This can be done using a similarity measure, such as dot product, cosine similarity, or a learned function: $S_i = \text{similarity}(Q, K_i)$
+2. Apply a normalization function, such as softmax, to the attention scores to obtain attention weights $W_i$: $$W_i = \frac{\exp(S_i)}{\sum_{j=1}^{N} \exp(S_j)}$$
+3. Compute the weighted sum of the values $V_i$ using the attention weights $W_i$ to obtain the context vector $C$: $$C = \sum_{i=1}^{N} W_i \cdot V_i$$
