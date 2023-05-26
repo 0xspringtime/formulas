@@ -45,3 +45,7 @@ $$P(y | x_1, x_2, \ldots, x_n) = \frac{P(y) \cdot P(x_1 | y) \cdot P(x_2 | y) \c
 [Decision Trees:](./dtree.py)
 
 Recursively partitioning the data based on feature values and creating a tree-like model of decisions and their outcomes
+
+[Random Forest:](./rforest.py)
+
+Ensemble learning method that combines multiple decision trees to make predictions, improves upon the individual decision tree's performance by reducing overfitting and increasing robustness
