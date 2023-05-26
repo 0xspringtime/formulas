@@ -49,3 +49,7 @@ Recursively partitioning the data based on feature values and creating a tree-li
 [Random Forest:](./rforest.py)
 
 Ensemble learning method that combines multiple decision trees to make predictions, improves upon the individual decision tree's performance by reducing overfitting and increasing robustness
+
+[Support Vector Machine:](svm.py)
+
+$$f(x) = \text{sign}(\sum_{i=1}^{n} w_i x_i + b)$$
