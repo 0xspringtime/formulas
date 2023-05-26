@@ -110,4 +110,23 @@ $$A^{[l]} = g^{[l]}(Z^{[l]})$$
 2. Propagate the error gradients backward through the layers: $$dZ^{[l]} = (W^{[l+1]})^T \cdot dZ^{[l+1]} \cdot g'^{[l]}(Z^{[l]})$$ $$dW^{[l]} = \frac{1}{m} \cdot dZ^{[l]} \cdot (A^{[l-1]})^T$$ $$db^{[l]} = \frac{1}{m} \cdot \text{np.sum}(dZ^{[l]}, \text{axis}=1, \text{keepdims}=True)$$
 3. Update the parameters using the error gradients and a learning rate: $$W^{[l]} = W^{[l]} - \alpha \cdot dW^{[l]}$$ $$b^{[l]} = b^{[l]} - \alpha \cdot db^{[l]}$$
 
+[Cross-Entropy Loss](./crossloss.py)
 
+$$L = -\frac{1}{N} \sum_{i=1}^{N} \sum_{c=1}^{C} y_{i,c} \log(\hat{y}_{i,c})$$
+
+[Sigmoid Acrivation:](./sigmoid)
+
+$$\sigma(x) = \frac{1}{1 + e^{-x}}$$
+
+[Convolutional Neural Networks:](./cnn.py)
+
+1. Convolutional Layer:
+-Convolution Operation: It involves convolving a set of learnable filters (also called kernels) with the input data to produce feature maps.
+-Activation Function: Typically, an activation function such as ReLU is applied element-wise to the output of the convolution operation.
+2. Pooling Layer:
+-Pooling Operation: It downsamples the feature maps by extracting the most prominent features, reducing the spatial dimensions and making the network more robust to variations in position.
+-Common pooling operations include Max Pooling and Average Pooling.
+3. Fully Connected Layers:
+-Flatten: The output feature maps from the last convolutional/pooling layer are flattened into a 1D vector.
+-Fully Connected Layers: These layers operate similar to those in a traditional neural network, where each neuron is connected to all neurons in the previous layer.
+-Activation Functions: Activation functions like ReLU are applied to the outputs of the fully connected layers.
