@@ -94,3 +94,12 @@ $$WCSS = \sum_{i=1}^{n} \sum_{j=1}^{k} w_{ij} \cdot ||x_i - \mu_j||^2$$
 1. Initialize the parameters $\theta = [\theta_0, \theta_1, \ldots, \theta_n]$
 2. Calculate the gradient of the cost function: $$\nabla J(\theta) = \left[ \frac{\partial J}{\partial \theta_0}, \frac{\partial J}{\partial \theta_1}, \ldots, \frac{\partial J}{\partial \theta_n} \right]$$
 3. Update the parameters using the learning ratei $\alpha$: $\theta := \theta - \alpha \cdot \nabla J(\theta)$
+
+[Rectified Linear Unit (ReLU):](./relu.py)
+
+$$f(x) = \max(0, x)$$
+
+[Forward Propagation:](./fprop.py)
+
+$$Z^{[l]} = W^{[l]} A^{[l-1]} + b^{[l]}$$
+$$A^{[l]} = g^{[l]}(Z^{[l]})$$
