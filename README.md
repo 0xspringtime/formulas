@@ -18,6 +18,10 @@ $$P(X=k) = \binom{n}{k} \cdot p^k \cdot (1-p)^{n-k}$$
 
 $$P(X=k) = \frac{e^{-\lambda} \cdot \lambda^k}{k!}$$
 
+[Power Law Distribution:](./pareto.py)
+
+$$P(x) = C \cdot x^{-\alpha}$$ where $C$ is a normalization constant and $\alpha$ the exponent parameter that determines the shape of the distribution
+
 [Normal Distribution:](normal.py)
 
 $$f(x) = \frac{1}{\sqrt{2\pi\sigma^2}} e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
