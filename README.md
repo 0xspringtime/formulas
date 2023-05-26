@@ -53,3 +53,19 @@ Ensemble learning method that combines multiple decision trees to make predictio
 [Support Vector Machine:](svm.py)
 
 $$f(x) = \text{sign}(\sum_{i=1}^{n} w_i x_i + b)$$
+
+[K-Nearest Neighbors:](knn.py)
+
+Classifies or predicts the target variable based on the k nearest neighbors in the feature space
+
+[Mean Squared Error:](./mse.py)
+
+$$MSE = \frac{1}{n}\sum_{i=1}^{n}(y_i - \hat{y}_i)^2$$
+
+[Mean Absolute Error:](./mae.py)
+
+$$MAE = \frac{1}{n}\sum_{i=1}^{n}|y_i - \hat{y}_i|$$
+
+[R-squared (Coefficient of Determination):](./rsquare.py)
+
+$$R^2 = 1 - \frac{\sum_{i=1}^{n}(y_i - \hat{y}_i)^2}{\sum_{i=1}^{n}(y_i - \bar{y})^2}$$
