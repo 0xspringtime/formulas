@@ -165,3 +165,13 @@ for query vector $Q$, vey vectors $K_i$, and value vectors $V_i$ for $i = 1, 2, 
 1. Compute the attention scores $S_i$ between the query $Q$ and each key $K_i$. This can be done using a similarity measure, such as dot product, cosine similarity, or a learned function: $S_i = \text{similarity}(Q, K_i)$
 2. Apply a normalization function, such as softmax, to the attention scores to obtain attention weights $W_i$: $$W_i = \frac{\exp(S_i)}{\sum_{j=1}^{N} \exp(S_j)}$$
 3. Compute the weighted sum of the values $V_i$ using the attention weights $W_i$ to obtain the context vector $C$: $$C = \sum_{i=1}^{N} W_i \cdot V_i$$
+
+[Caesar Cipher:](./caesar.py)
+
+$$E(x) = (x + k) \mod 26$$
+$$D(x) = (x - k) \mod 26$$
+
+[Substitution Cipher:](./sub.py)
+
+$$E(x) = \text{{substitution\_key}}[x]$$
+$$D(y) = \text{{substitution\_key\_reverse}}[y]$$
