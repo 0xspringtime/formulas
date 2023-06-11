@@ -38,6 +38,12 @@ $$t = \frac{{\bar{x}_1 - \bar{x}_2}}{{\sqrt{{\frac{{s_1^2}}{{n_1}} + \frac{{s_2^
 
 Let $X_1, X_2, \ldots, X_n$ be a sequence of independent and identically distributed random variables with mean $\mu$ and standard deviation $\sigma$. If $n$ is sufficiently large, the distribution of the sample mean $\bar{X}$ approaches a Gaussian distribution with mean $\mu$ and standard deviation $\sigma/\sqrt{n}$ as $n$ tends to infinity.
 
+[Chain Rule:](./chain.py)
+
+For $y = f(g(x))$:
+
+$$\frac{{dy}}{{dx}} = \frac{{df}}{{dg}} \cdot \frac{{dg}}{{dx}}$$
+
 [Confidence Interval:](./conf.py)
 
 $$\bar{x} \pm Z \left(\frac{\sigma}{\sqrt{n}}\right)$$
