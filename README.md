@@ -107,6 +107,15 @@ $$WCSS = \sum_{i=1}^{n} \sum_{j=1}^{k} w_{ij} \cdot ||x_i - \mu_j||^2$$
 4. Sort the eigenvalues in descending order and select the top k eigenvectors corresponding to the largest eigenvalues.
 5. Project the data onto the selected eigenvectors: $$\text{transformed\_data} = X_{\text{std}} \times \text{selected\_eigenvectors}$$
 
+[Gradient Update](./gradu.py)
+
+$$\theta_{t+1} = \theta_t - \alpha \cdot \nabla J(\theta_t)$$
+
+where $\theta_{t+1}$ represents the updated parameter values at time step $t+1$
+$\theta_t$ represents the current parameter values at time step $t$
+$\alpha$ is the learning rate, which controls the step size of the update
+$\nabla J(\theta_t)$  the gradient of the objective function $J$ with respect to the parameters $\theta$ attime step $t$
+
 [Gradient Descent:](./grad.py)
 
 1. Initialize the parameters $\theta = [\theta_0, \theta_1, \ldots, \theta_n]$
