@@ -126,6 +126,10 @@ $\nabla J(\theta_t)$  the gradient of the objective function $J$ with respect to
 
 $$f(x) = \max(0, x)$$
 
+[Gaussian Error Linear Unit (GELU):](./gelu.py)
+
+$$\text{GELU}(x) = \frac{1}{2} \left(1 + \text{erf}\left(\frac{x}{\sqrt{2}}\right)\right) \cdot x$$
+
 [Forward Propagation:](./fprop.py)
 
 $$Z^{[l]} = W^{[l]} A^{[l-1]} + b^{[l]}$$
