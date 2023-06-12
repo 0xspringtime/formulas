@@ -170,7 +170,7 @@ $$\text{similarity}(A, B) = \frac{A \cdot B}{\|A\| \|B\|}$$
 
 $$\text{BN}(x) = \gamma \cdot \frac{x - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}} + \beta$$ with $\mu_B$ mean of the input batch, $\sigma_B^2$ variance of the input batch, $\gamma$ and $\beta$ learnable parameters
 
-[Drouput:](./dropout.py)
+[Dropout:](./dropout.py)
 
 $$\text{Dropout}(x) = \frac{1}{1-p} \cdot \text{Mask} \odot x$$
 
