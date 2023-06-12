@@ -178,6 +178,12 @@ $$\text{BN}(x) = \gamma \cdot \frac{x - \mu_B}{\sqrt{\sigma_B^2 + \epsilon}} + \
 
 $$\text{Dropout}(x) = \frac{1}{1-p} \cdot \text{Mask} \odot x$$
 
+[Multi-Layer Perceptron (MLP):](./mlp.py)
+
+$$z = \sum_{i=1}^{n} w_i \cdot x_i + b$$
+$$a = \sigma(z)$$
+where $z$ is the weighted sum of the inputs and biases, $x_i$ are the input values, $w_i$ are the corresponding weights, $b$ is the bias term and $\sigma(\cdot)$ is the activation function that introduces non-linearity
+
 [Attention Mechanism:](./attention.py)
 
 for query vector $Q$, vey vectors $K_i$, and value vectors $V_i$ for $i = 1, 2, ..., N$:
